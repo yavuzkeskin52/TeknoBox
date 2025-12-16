@@ -1,0 +1,545 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #011f4b;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+header img{
+    height: 6.5em;
+    width: 6.5em;
+    float: left;
+    margin-left: 5%;
+    margin-top: -2.4em;
+}
+header  h1{
+    justify-content: center;
+    float: left;
+    margin-left:8% ;
+    font-size: 28px;
+    color: #FFFFFF;
+    text-shadow: 0 0 12px rgba(255,255,255,1);
+}
+header li{
+    display: inline;
+    padding:2% 2%;
+}
+header li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+header li a:hover{
+    color: #ffcc00;
+    text-decoration: underline;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.hero{
+    background-color: #03396c;
+    color: #FFFFFF;
+    padding: 60px 20px;
+    text-align: center;
+}
+.hero h2{
+    color: #FFFFFF;
+    text-shadow: 0 0 12px rgba(255,255,255,1);
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.hero p{
+    font-size: 20px;
+}
+.hero a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.hero a:hover{
+    background-color: #f8cc1c;
+    box-shadow: 0 0 12px rgba(255,255,255,1);
+}
+.features{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding: 40px 20px;
+    background-color: #e1e1e1;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    gap: 10px;
+}
+.features .feature{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.features .feature h3{
+    margin-bottom: 10px;
+    color: #03396c;
+}
+.features .feature p{
+    font-size: 16px;
+    color: #333333;
+}
+.features :hover{
+    transform: translateY(-3px);
+    
+}
+section h2{
+    text-align: center;
+    margin: 40px 0 20px 0;
+    color: #03396c;
+}
+.products{
+    margin: 0 3%;
+    overflow: auto; 
+}
+.product{
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0,0.3);
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin: 20px ;
+    padding: 4%;
+    border-radius: 10px;
+    overflow: hidden;        
+    transition: transform 0.3s ease;
+    text-align: center;
+    border: #03396C 2px solid;
+    margin-bottom: 50px;
+}
+.product:hover {
+    transform: translateY(-14px);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.08);
+    border: #f8cc1c 4px solid;
+}
+.product img {
+    transition: transform 0.3s ease; 
+    height: 80%;
+    width: 90%;
+    padding: 0 3% 3% 5%;
+}
+.product:hover img {
+    transform: scale(1.1);
+}   
+.product h3 {
+    margin: 2px 0 1px 0;
+    color: #03396c;
+}
+.product p {
+    font-size: 14px;
+    color: #555555;
+}
+.product a{
+    display: inline-block;
+    margin-top: 5px;
+    padding: 8px 16px;
+    background-color: #ffcc00;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+} 
+.product a:hover{
+    background-color: #f8cc1c;
+    box-shadow: 0 0 12px rgb(0, 0, 0,0.2);
+}
+section h2{
+    font-size: 28px;
+}
+.testimonial{
+    background-color: #6497B1;
+    color: #FFFFFF;
+    width: 45%;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0,0.3);
+    width: 35%;
+    float: left;
+    margin: 20px ;
+    padding: 50px;
+    border-radius: 10px;
+    overflow: hidden;        
+    transition: transform 0.3s ease;
+    text-align: center;
+    border: #03396C 2px solid;
+    margin-bottom: 50px;
+}
+.testimonial:hover {
+    animation: hinge 1s;
+}
+.testimonials{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 10px;
+}
+.testimonial p{
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.testimonial h4{
+    font-size: 20px;
+    color: #ffcc00;
+}
+.contact{
+    padding: 40px 20px;
+    text-align: center;
+}
+.contact-us{
+    padding: 40px 20px;
+    text-align: center;
+     background-color: #03396c;
+    
+}
+.contact-us p{
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.contact-us a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.contact-us a:hover{
+    background-color: #f8cc1c;
+    box-shadow: 0 0 12px rgba(255,255,255,1);
+}
+.contact-us h2{
+    color: #f8cc1c;
+    margin-bottom: 20px;
+}
+footer{
+    background-color: #011f4b;
+    color: #FFFFFF;
+    text-shadow: 0 0 12px rgba(255,255,255,1);
+    text-align: center;
+    padding: 50px 0;
+    bottom: 0;
+    width: 100%;
+    
+}
+.CalismaSaatleri {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;  
+    gap: 15px;   
+    font-family: Libre Baskerville, serif;     
+}
+.CalismaSaatleri svg{
+    color: #011f4b;
+}
+.CalismaSaatleri svg:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.Hakkimizda {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;  
+    gap: 15px;   
+    margin: 5%;
+    font-family: Libre Baskerville, serif;    
+}
+.Hakkimizda svg{
+    color: #011f4b;
+}
+
+.Hakkimizda svg:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.Sermayemiz {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;  
+    gap: 15px;   
+    font-family: Libre Baskerville, serif;     
+}
+.Sermayemiz svg{
+    color: #011f4b;
+    width: 56px;
+    height: 56px;
+}
+.Sermayemiz svg:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.Vizyonumuz {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;  
+    gap: 15px;   
+    font-family: Libre Baskerville, serif;     
+}
+.Vizyonumuz svg{
+    color: #011f4b;
+}
+
+.Vizyonumuz svg:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.Misyonumuz {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;  
+    gap: 15px;   
+    font-family: Libre Baskerville, serif;     
+}
+.Misyonumuz svg{
+    color: #011f4b;
+    width: 56px;
+    height: 56px;
+}
+.Misyonumuz svg:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.bosluklu{
+    word-spacing: 15px;
+    font-size: 1.5em;
+}
+.ul{
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ul li{
+    margin: 10px 25px;
+}
+
+
+.IletisimBilgileri {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;  
+    gap: 15px;   
+    font-family: Libre Baskerville, serif; 
+    text-align: center;    
+    
+}
+.IletisimBilgileri .iletisim{
+    margin: 20px 0;
+    background-color: #e1e1e1;
+    padding: 3% 5%;
+    border-radius:10px ;
+    border: #03396C 2px solid;
+}
+.IletisimBilgileri .iletisim:hover{
+    animation: shakeX 0.5s;
+    
+}
+.IletisimBilgileri a{
+    text-decoration: none;
+    color: #011f4b;
+    font-weight: bold;
+    background-color: #ffcc00;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-align: center;
+}
+.IletisimBilgileri .iletisim p{
+    margin: 20px 0;
+}
+.IletisimBilgileri svg{
+    color: #011f4b;
+}
+.IletisimBilgileri svg:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.Iletisim{
+    text-align: center;
+    margin: 40px 20px;
+    font-size: 1.6em;
+    font-family: Libre Baskerville, serif;
+}
+.Iletisim h2{
+    margin: 20px 20px;
+    font-size: 2.5em;
+    color: #03396c;
+}
+.Iletisim p{
+    margin: 20px 20px;
+    color: #333333;
+}
+.Iletisim .maps{
+    margin: 20px 0;
+    background-color: #e1e1e1;
+    padding: 3% 5%;
+    border-radius:10px ;
+    border: #03396C 2px solid;
+    color: #011f4b;
+}
+.Iletisim svg{
+    width: 56px;
+    height: 56px;
+}
+.Iletisim svg:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.IletisimFormu{
+    margin: 5% 5%;
+    background-color: #e1e1e1;
+    padding: 3% 5%;
+    border-radius:10px ;
+    border: #03396C 2px solid;
+    color: #011f4b;
+}
+.IletisimFormu form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.8em;
+    font-family: Libre Baskerville, serif;
+    
+}
+.IletisimFormu form input, .IletisimFormu form textarea , .IletisimFormu form button{
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #011f4b;
+}
+
+.product-detail{
+    background-color: #e1e1e1;
+    padding: 3% 1%;
+    border-radius:10px ;
+    border: #03396C 3px solid;
+    color: #011f4b;
+    font-family: Libre Baskerville, serif;
+    display: flex;
+    margin: 4.2% 20%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0,0.3);
+    max-width: 60%;
+    max-height: 40%;
+    width: 80%;
+}
+.product-detail a{
+    display: flex;
+    margin-top: 10px;
+    padding: 18px;
+    background-color: #ffcc00;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.product-detail a:hover{
+    background-color: #3a2f02;
+    box-shadow: 0 0 12px rgb(0, 0, 0,0.2);
+    color: #FFFFFF;
+}
+.product-detail a span{
+    margin-left: 10%;   
+    width: 60%;
+    font-size: 1.5em;
+}
+.product-detail a svg {
+    width: 32px;
+    height: 32px;
+    stroke: currentColor;
+    margin-left: auto;
+    stroke-width: 1;
+}
+
+.product-detail button{
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+.product-detail button:hover{
+    background-color: #3a2f02;
+    box-shadow: 0 0 12px rgb(0, 0, 0,0.2);
+    color: #FFFFFF;
+}
+.product-detail img{
+    max-width: 40%;
+    max-height: 20%;
+}
+.product-detail li{
+    margin: 4px 25px;
+    font-size: 1.2em;
+    list-style: none;
+}
+.product-detail h2{
+    margin-bottom: 2px;
+    color: #03396c;
+}
+@media (max-width: 600px) {
+    .testimonials{
+        flex-direction: column;
+        gap: 12px;
+    }
+    .testimonial{
+        width: 100%;
+        padding: 20px;
+    }
+    .product{
+        width: auto;
+        float: none;
+        margin: 20px auto;
+        padding: 20px;
+        height: auto;
+    }
+    .product-detail{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    header h1{
+        float: none;
+        margin-left: 0;
+        text-align: center;
+    }
+}
